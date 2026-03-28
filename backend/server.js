@@ -3,6 +3,13 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 
+
+
+import customerRoutes from "./routes/customerRoutes.js";
+
+app.use("/api/customers", customerRoutes);
+
+
 dotenv.config();
 
 const app = express();
